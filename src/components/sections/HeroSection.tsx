@@ -209,8 +209,8 @@ const HeroSection = memo(({ onOpenContactForm }: HeroSectionProps) => {
       >
         <div className="absolute inset-0 astro-hero-gradient" aria-hidden="true" />
         
-        <div className="container px-4 md:px-6 relative z-10">
-          <div className="text-center space-y-6 sm:space-y-8 max-w-4xl mx-auto">
+        <div className="container px-4 md:px-6 relative z-10 min-w-0">
+          <div className="text-center space-y-6 sm:space-y-8 max-w-4xl mx-auto w-full">
             
             {/* Logo and Main Content */}
             <div className="space-y-6 fade-in-up astro-floating">
@@ -231,10 +231,10 @@ const HeroSection = memo(({ onOpenContactForm }: HeroSectionProps) => {
                   Diplomado de Inteligencia Artificial
                 </p>
                 
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white text-balance leading-tight">
-                  Domina la <span className="astro-text-gradient">IA</span> sin
-                  <br className="hidden sm:block" />
-                  ser <span className="astro-text-gradient">programador</span>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white text-balance leading-tight break-words">
+                  Domina la <span className="astro-text-gradient">IA</span>{" "}
+                  <span className="whitespace-nowrap">sin ser</span>{" "}
+                  <span className="astro-text-gradient">programador</span>
                 </h1>
                 
                 <p className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed px-4">
